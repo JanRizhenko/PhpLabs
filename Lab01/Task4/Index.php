@@ -19,7 +19,7 @@
 <body>
 
 <?php
-$char = 'b';
+$char = 'i';
 
 $char = strtolower($char);
 

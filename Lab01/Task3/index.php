@@ -18,7 +18,7 @@
 <body>
 
 <?php
-    $month = 2;
+    $month = 7;
     if ($month == 12 || $month == 1 || $month == 2)
         {
             echo("It's winter outside!");
