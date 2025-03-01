@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $password .= $allChars[random_int(0, strlen($allChars) - 1)];
         }
         str_shuffle($password);
-        echo "<p>Згенерований пароль:</p><p> $password </p>";
+        echo "<p>Згенерований пароль:</p>" . "<p>" . htmlspecialchars($password) . "</p>";
 
         echo isStrongPassword($password) ? "Пароль міцний." : "Пароль занадто слабкий.";
     }
