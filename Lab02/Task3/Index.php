@@ -19,7 +19,7 @@
 </head>
 <body>
 <form method="post">
-    <label for="text">Введіть назви міст через пробіл:</label><br>
+    <label for="text">Напишіть повний шлях до файлу:</label><br>
     <textarea name="text" id="text" rows="4" cols="50" required></textarea><br>
 
     <button type="submit">Отримати назву файлу</button>
