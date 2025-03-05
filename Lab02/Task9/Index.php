@@ -35,6 +35,7 @@ if (isset($_GET['lang']) && in_array($_GET['lang'], $available_langs)) {
     $lang = $_COOKIE['lang'];
 } else {
     $lang = 'ukr';
+    setcookie('lang', $lang, time() + (180 * 24 * 60 * 60), "/");
 }
 
 $language_file = "lang/{$lang}.php";
