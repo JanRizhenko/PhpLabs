@@ -54,7 +54,7 @@ try {
     </table>
 
     <div class="buttons">
-        <button onclick="window.location.href='Actions/add.php'">Додати запис</button>
+        <button onclick="window.location.href='Actions/insert.php'">Додати запис</button>
         <form action="Actions/delete.php" method="post" style="display:inline;">
             <input type="number" name="id" placeholder="№ запису" required>
             <button type="submit">Вилучити запис</button>
