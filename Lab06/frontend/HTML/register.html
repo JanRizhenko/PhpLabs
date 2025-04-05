@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #registrationForm {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        input {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 26px;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #message {
+            color: #d8000c;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form[action] {
+            margin-bottom: 30px;
+        }
+
+        form[action] button {
+            background-color: #007bff;
+        }
+
+        form[action] button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/Lab06/frontend/HTML/users.html">
+    <button type="submit">Переглянути користувачів</button>
+</form>
+<form action="/Lab06/frontend/HTML/login.html">
+    <button type="submit">Авторизація</button>
+</form>
+
+<h2>Реєстрація</h2>
+<form id="registrationForm">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Електронна адреса:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password">
+
+    <button type="submit">Зареєструватися</button>
+</form>
+
+<p id="message"></p>
+
+<script src="/Lab06/frontend/JS/submitForm.js"></script>
+</body>
+</html>
